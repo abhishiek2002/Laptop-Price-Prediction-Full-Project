@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price</title>
+    <style>
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: azure;
+        }
+        
+        body{
+            background-color: rgba(0, 0, 0, 0.2);
+
+        }
+
+        .header_content{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+
+        nav{
+            width: 50%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25%;
+            padding: 25px;
+            font-size: 23px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: azure;
+            position: relative;
+        }
+
+        nav a:hover::after{
+            content: '';
+            width:100% ;
+            height: 2px;
+            position: absolute;
+            background: linear-gradient(red,pink,white);
+            bottom: 0;
+            left: 0;
+        }
+
+        /* main section */
+
+        .main_container{
+            max-width: 1400px;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('/static/computer\ photo.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 5px;
+        }
+
+        .main_container h2{
+            margin-left: 15vw;
+            width: 400px;
+        }
+        
+        .main_container a{
+            margin-left: 15vw;
+            width: 400px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        .main_container a span {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.2s ease-in-out;
+            position: relative;
+            /* z-index: ; */
+            }
+
+            .main_container a span:hover {
+            background-color: #333;
+            }
+
+            .main_container a span::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: conic-gradient(red,blue,#10e9f4);
+                top: 0;
+                left: 0;
+                border-radius: 5px;
+                z-index: -1;
+                padding: 12px;
+                box-sizing: content-box;
+                
+            }
+
+            /* contact footer */
+
+            .footer_content{
+                width: 100vw;
+                max-width: 1400px;
+                height: 100vh;
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            
+            .contact_detail_box{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .left_box{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-size: 25px;
+            }
+
+            .img_box{
+                background-image: url(/static/contact\ image.png);
+                background-repeat: no-repeat;
+                background-position:center;
+                background-size: cover;
+                width: 400px;
+                height: 350px;
+
+            }
+
+            .right_box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            .right_box h5{
+                color: #9b9b9b;
+                font-size: 19px;
+            }
+            </style>
+</head>
+<body>
+    <header>
+        <div class="header_content">
+            <nav>
+
+                <a href="/"><span>Home</span></a>
+                
+                <a href="/project"><span>Project</span></a>
+                
+                <a href="#contact"><span>Contact</span></a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_container">
+            <h2>Find Out Your Dream Laptop Price</h2>
+            <a href="/project"><span>Price Checker</span></a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer_content" id="contact">
+
+            <div class="contact_detail_box">
+
+                <div class="left_box">
+                    <h2>Let's work together.</h2>
+                    <div class="img_box"></div>
+                </div>
+
+                <div class="right_box">
+
+                    <div class="box">
+                        <h5>Mailing Address</h5>
+                        <p>123 Anywhere St. Any City, ST 12345</p>
+                    </div>
+
+                    <div class="box">
+                        <h5>Email Address</h5>
+                        <p>kuntalabishek2002@gmail.com</p>
+                    </div>
+
+                    <div class="box">
+                        <h5>Profile</h5>
+                        <p><a href="https://www.linkedin.com/in/abhishek-kuntal/">Linkedin</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+  
+        </div>
+    </footer>
+</body>
+</html>
